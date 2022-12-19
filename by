@@ -1,0 +1,13 @@
+如何检查图像是否已经被完全加载进来 前端UI分享 
+$('#theImage').attr('src', 'image.jpg').load(function() { 
+　　alert('This Image Has Been Loaded'); 
+}); 如何使用jQuery来为事件指定命名空间：
+//事件可以这样绑定命名空间 
+$('input').bind('blur.validation', function(e){ 
+　　// ... 
+  如何检查cookie是否启用
+var dt = new Date(); 
+dt.setSeconds(dt.getSeconds() + 60); 
+document.cookie = "cookietest=1; expires=" + dt.toGMTString(); 
+var cookiesEnabled = document.cookie.indexOf("cookietest=") != -1; 
+if(!cookiesEnabled) { 
